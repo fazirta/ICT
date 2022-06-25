@@ -1,0 +1,14 @@
+/* TEAM */
+	Full Stack Developer:Fazil Tirtana
+	Contact: faziltirtana [at] tutanota.com
+	Twitter: @faziltirtana
+	From:Jakarta, Indonesia
+
+/* THANKS */
+	
+
+/* SITE */
+	Last update:2022/05/05
+	Language: Indonesian
+	Doctype:HTML5
+	IDE: Visual Studio Code
