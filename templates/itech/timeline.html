@@ -1,0 +1,82 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Timeline
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg2.webp' %}
+{% endblock %}
+
+{% block content %}
+<!-- breadcrumbs area start -->
+<div class="breadcrumbs_aree breadcrumbs_bg mb-140"
+  data-bgimg="{% static '/itech/assets/img/bg/breadcrumbs-bg.webp' %}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="breadcrumbs_text text-center">
+          <h1>Timeline I-Tech</h1>
+          <ul class="d-flex justify-content-center">
+            <li><a href="index.html">Home </a></li>
+            <li><span>//</span></li>
+            <li>Timeline I-Tech</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- breadcrumbs area end -->
+
+<!-- page wrapper start -->
+<div class="page_wrapper">
+  <section class="game_details_section mb-125">
+    <div class="container">
+      <div class="section_title text-center wow fadeInUp mb-60" data-wow-delay="0.1s" data-wow-duration="1.1s">
+        <h2>
+          Timeline Valorant
+        </h2>
+      </div>
+      <div>
+        <img class="wow fadeInUp" src="{% static '/itech/assets/img/others/Timeline-valorant.png' %}">
+      </div>
+      <div class="section_title text-center wow fadeInUp mb-60" data-wow-delay="0.1s" data-wow-duration="1.1s"
+        style="margin-top: 8rem;">
+        <h2>
+          Timeline Short Movie
+        </h2>
+      </div>
+      <div>
+        <img class="wow fadeInUp" src="{% static '/itech/assets/img/others/Timeline-shortmovie.png' %}">
+      </div>
+    </div>
+  </section>
+  <!-- gaming update section start -->
+  <section class="gaming_update_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="gaming_update_inner d-flex justify-content-between align-items-center"
+            data-bgimg="{% static '/itech/assets/img/bg/gaming-update.webp' %}">
+            <div class="gaming_update_text">
+              <h2>
+                Daftar I-tech 2022 <br />
+                Sekarang!
+              </h2>
+            </div>
+            <div class="gaming_update_btn">
+              <a class="btn btn-link" href="/itech/daftar">DAFTAR
+                <img width="20" height="20" src="{% static '/itech/assets/img/icon/arrrow-icon.webp' %}" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gaming update section end -->
+</div>
+<!-- page wrapper end -->
+{% endblock %}

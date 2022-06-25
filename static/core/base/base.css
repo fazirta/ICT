@@ -1,0 +1,45 @@
+main {
+  padding-top: 6rem;
+}
+
+.products {
+  padding-top: 2rem;
+  justify-content: center;
+}
+
+.product {
+  text-decoration: none;
+  color: #212529;
+}
+
+.product:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
+#popular {
+  text-align: center;
+}
+
+.product-detail-image-container {
+  max-width: 28rem;
+  max-height: 38rem;
+}
+
+.product-detail-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.details {
+  padding-top: 3rem;
+}
+
+.description {
+  padding-top: 3rem;
+  max-width: 28rem;
+}
+
+.description h6 {
+    margin-top: 1rem;
+}

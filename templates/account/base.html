@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block head_title %}{% endblock %}</title>
+    {% block extra_head %}
+    <script src="https://cdn.tailwindcss.com/3.0.24"></script>
+    {% endblock %}
+  </head>
+  <body>
+    {% block body %} {% if messages %}
+    {% endif %} {% block content %} {% endblock %} {% endblock %} {% block extra_body %} {% endblock %}
+  </body>
+</html>
