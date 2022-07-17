@@ -15,8 +15,8 @@ def home_view(request):
     }
     return render(request, template, contexts)
 
-def about_view(request):
-    template = 'core/about.html'
+def fotografi_view(request):
+    template = 'core/divisi/fotografi.html'
 
     contexts = {}
     return render(request, template, contexts)
