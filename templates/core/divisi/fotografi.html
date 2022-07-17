@@ -83,47 +83,195 @@
         </header>
         <!-- header close -->
 
+        <style>
+            #subheader {
+                padding-top: 80px;
+                background: url(images/bg-subheader.jpg) top;
+                background-position-x: center;
+                background-position-y: top;
+                background-image: url("images/bg-subheader.jpg");
+                background-size: auto;
+                background-size: cover;
+                text-align: center;
+            }
+
+            .no-bottom {
+                margin-bottom: 0 !important;
+                padding-bottom: 0;
+            }
+
+            .no-bottom {
+                padding-bottom: 0 !important;
+            }
+
+            section {
+                padding: 60px 0 60px 0;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                background: #fff;
+            }
+
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            main,
+            nav,
+            section,
+            summary {
+                display: block;
+            }
+
+            #subheader .overlay {
+                padding: 90px 0 60px 0;
+                background: rgba(0, 0, 0, .2);
+            }
+
+            .container {
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .row {
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            .divider-deco span,
+            .box-icon-small i,
+            .tiny-border,
+            .bg-color,
+            .btn-custom,
+            .news-list-date .date,
+            .feature-box.icon-square>i,
+            .owl-custom-nav .btn-next::before,
+            .owl-custom-nav .btn-prev::before,
+            #testi-carousel-2 blockquote,
+            .owl-theme .owl-controls .owl-page.active span,
+            .awards-carousel .overlay,
+            .side-nav li.active,
+            .testi-box-1 blockquote,
+            .simple-form input[type="submit"],
+            .btn-expand::before,
+            .faq .icon-search,
+            #mainmenu li li a:hover,
+            .pagination li.active a,
+            .news-item .quote,
+            .ex-gallery .small-border,
+            #menu-btn,
+            .news-item.style-2 .date,
+            .timeline.custom-tl>li>.timeline-badge,
+            ul.progress li.active,
+            ul.progress li.beforeactive::before,
+            .small-border,
+            .social-icons i,
+            .icon-big,
+            .call-to-action,
+            a.btn-slider,
+            .h-line,
+            .preview2 .bloglist-small .date-box,
+            .widget_nav_menu ul li.current-menu-item,
+            .widget_search #btn-search,
+            .pagination li.active a,
+            .pagination li span.current,
+            .footer-widget .newsletter-widget form .newsletter-submit,
+            #back-to-top,
+            .bloglist-small .date-box,
+            #mainmenu li.current-menu-ancestor li.current-menu-item a,
+            .cta-form input[type="submit"],
+            .cta-form button,
+            .preview3 .tnp-widget input.tnp-submit,
+            nav ul#mainmenu>li.current-menu-ancestor>li.current-menu-ancestor>a {
+                background-color: #d03232;
+            }
+
+            .divider-deco span,
+            .box-icon-small i,
+            .tiny-border,
+            .bg-color,
+            .btn-custom,
+            .news-list-date .date,
+            .feature-box.icon-square>i,
+            .owl-custom-nav .btn-next::before,
+            .owl-custom-nav .btn-prev::before,
+            #testi-carousel-2 blockquote,
+            .owl-theme .owl-controls .owl-page.active span,
+            .awards-carousel .overlay,
+            .side-nav li.active,
+            .testi-box-1 blockquote,
+            .simple-form input[type="submit"],
+            .btn-expand::before,
+            .faq .icon-search,
+            #mainmenu li li a:hover,
+            .pagination li.active a,
+            .news-item .quote,
+            .ex-gallery .small-border,
+            #menu-btn,
+            .news-item.style-2 .date,
+            .timeline.custom-tl>li>.timeline-badge,
+            ul.progress li.active,
+            ul.progress li.beforeactive::before,
+            .small-border,
+            .social-icons i,
+            .icon-big,
+            .call-to-action,
+            a.btn-slider,
+            .h-line,
+            .preview2 .bloglist-small .date-box,
+            .widget_nav_menu ul li.current-menu-item,
+            .widget_search #btn-search,
+            .pagination li.active a,
+            .pagination li span.current,
+            .footer-widget .newsletter-widget form .newsletter-submit,
+            #back-to-top,
+            .bloglist-small .date-box {
+                background-color: #D03232;
+            }
+
+            .small-border {
+                clear: both;
+                width: 80px;
+                height: 3px;
+                background: #D03232;
+                background-color: rgb(208, 50, 50);
+                margin: 20px auto 20px auto;
+            }
+
+            .flipInY {
+                -webkit-backface-visibility: visible !important;
+                backface-visibility: visible !important;
+                -webkit-animation-name: flipInY;
+                animation-name: flipInY;
+            }
+
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+        </style>
+
         <!-- content begin -->
         <div id="content" class="no-bottom no-top">
-            <div style="height: 4rem;"></div>
-            <section data-bgcolor="#f9f9f9"
-                style="background-color: rgb(249, 249, 249); background-size: cover; --darkreader-inline-bgcolor: #1b1e1f;"
-                data-darkreader-inline-bgcolor="">
-                <div class="container" style="background-size: cover;">
-                    <div class="row" style="background-size: cover;">
+            <section id="subheader" class="no-bottom" data-stellar-background-ratio="0.5"
+                style="background-position: 50% 0px; background-image: url({% static 'core/images/misc/6.jpg' %});">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 style="color: white;">Fotografi</h1>
+                                <div class="small-border wow flipInY" data-wow-delay=".8s" data-wow-duration=".8s"
+                                    style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.8s; animation-name: flipInY;">
+                                </div>
 
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <h2>For every complex problem, there is an answer that is clear, simple, and wrong.</h2>
+                            </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt
-                                mollit anim id est laborum.</p>
-                        </div>
-
-                        <div class="col-lg-4 col-md-12 col-md-12" style="background-size: cover;">
-                            <figure class="picframe mb30">
-                                <a class="image-popup" href="{% static 'core/images/misc/1.jpg' %}">
-                                    <span class="overlay-v">
-                                        <span class="v-center">
-                                            <span>This is photo caption. You can add any text into this. Also you can
-                                                zooming image by click it.</span>
-                                        </span>
-                                    </span>
-                                </a>
-                                <img src="{% static 'core/images/misc/1.jpg' %}" class="img-fullwidth" alt="">
-                            </figure>
-                        </div>
-
-                        <div class="clearfix" style="background-size: cover;"></div>
                     </div>
                 </div>
             </section>
@@ -140,80 +288,112 @@
                         <div class="inner-padding" style="background-size: cover;">
                             <div class="col-md-5 offset-md-7 wow fadeIn animated"
                                 style="background-size: cover; visibility: visible; animation-name: fadeIn;">
-                                <h2 class="mb20">We Make Your Dream</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                    sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum..
+                                <h2 class="mb20">Bukan Sekedar Cekrek!</h2>
+                                <p>Seringkali orang beranggapan bahwa mengambil sebuah foto merupakan hal yang sangat
+                                    mudah, banyak yang menganggap bahwa mengambil foto itu hanya sekedar pencet tombol
+                                    lalu jadilah sebuah foto yang bagus. Padahal dalam kenyataanya banyak sekali aspek
+                                    yang harus dipelajari untuk dapat menghasilkan sebuah foto yang bagus.
                                 </p>
                                 <div class="spacer-half" style="background-size: cover;"></div>
-                                <a href="#section-contact" class="btn-custom scroll-to">Contact Us</a>
+                                <a href="#section-contact" class="btn-custom scroll-to">Daftar</a>
                             </div>
                             <div class="clearfix" style="background-size: cover;"></div>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
-        <div class="row no-gutters gallery-wrap sequence_pf" style="background-size: cover;">
+            <section data-bgcolor="#f9f9f9"
+                style="background-color: rgb(249, 249, 249); background-size: cover; --darkreader-inline-bgcolor: #1b1e1f;"
+                data-darkreader-inline-bgcolor="">
+                <div class="container" style="background-size: cover;">
+                    <div class="row" style="background-size: cover;">
 
-            <!-- gallery item -->
-            <div class="col-lg-4 col-md-6 col-sm-6 sq-item" style="background-size: cover;">
-                <div class="picframe wow zoomIn animated"
-                    style="background-size: cover; visibility: visible; animation-delay: 0s; animation-name: zoomIn;"
-                    data-wow-delay="0s">
-                    <div class="pf-click" data-value="project-details-image.html" style="background-size: cover;">
-                        <span class="overlay">
-                            <span class="title">
-                                <span>Single Image</span>
-                            </span>
-                        </span>
-                        <img src="{% static 'core/images/portfolio/1.jpg' %}" class="wow animated" alt=""
-                            style="visibility: visible;">
+                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
+                            <h2>Kenali Kembali Esensi Fotografi</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
+                            <p>Maraknya media digital kini membuat siapa pun bisa menjadi seorang fotografer. Kumpulan
+                                foto yang seringkali diunggah menunjukkan cara berekspresi sang fotografer untuk para
+                                penikmatnya. Tapi, apakah kamu mengerti apa esensi dari sebuah karya fotografi?
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 col-md-12" style="background-size: cover;">
+                            <figure class="picframe mb30">
+                                <a class="image-popup" href="{% static 'core/images/misc/1.jpg' %}">
+                                    <span class="overlay-v">
+                                        <span class="v-center">
+                                            <span>Setiap peristiwa yang ditangkap kamera seharusnya memiliki latar
+                                                suasana yang menjadi ruh cerita untuk sebuah foto.</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <img src="{% static 'core/images/misc/1.jpg' %}" class="img-fullwidth" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="clearfix" style="background-size: cover;"></div>
                     </div>
                 </div>
-            </div>
-            <!-- close gallery item -->
+            </section>
+            <div class="row no-gutters gallery-wrap sequence_pf" style="background-size: cover;">
 
-            <!-- gallery item -->
-            <div class="col-lg-4 col-md-6 col-sm-6 sq-item" style="background-size: cover;">
-                <div class="picframe wow zoomIn animated"
-                    style="background-size: cover; visibility: visible; animation-delay: 0.125s; animation-name: zoomIn;"
-                    data-wow-delay="0.125s">
-                    <div class="pf-click" data-value="project-details-slider.html" style="background-size: cover;">
-                        <span class="overlay">
-                            <span class="title">
-                                <span>Multi Images Slider</span>
+                <!-- gallery item -->
+                <div class="col-lg-4 col-md-6 col-sm-6 sq-item" style="background-size: cover;">
+                    <div class="picframe wow zoomIn animated"
+                        style="background-size: cover; visibility: visible; animation-delay: 0s; animation-name: zoomIn;"
+                        data-wow-delay="0s">
+                        <div class="pf-click" data-value="project-details-image.html" style="background-size: cover;">
+                            <span class="overlay">
+                                <span class="title">
+                                    <span>Fotografi</span>
+                                </span>
                             </span>
-                        </span>
-                        <img src="{% static 'core/images/portfolio/2.jpg' %}" class="wow animated" alt=""
-                            style="visibility: visible;">
+                            <img src="{% static 'core/images/portfolio/1.jpg' %}" class="wow animated" alt=""
+                                style="visibility: visible;">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- close gallery item -->
+                <!-- close gallery item -->
 
-            <!-- gallery item -->
-            <div class="col-lg-4 col-md-6 col-sm-6 sq-item wow animated"
-                style="background-size: cover; visibility: visible;">
-                <div class="picframe wow zoomIn animated"
-                    style="background-size: cover; visibility: visible; animation-delay: 0.25s; animation-name: zoomIn;"
-                    data-wow-delay="0.25s">
-                    <div class="pf-click" data-value="project-details-youtube.html" style="background-size: cover;">
-                        <span class="overlay">
-                            <span class="title">
-                                <span>Youtube Video</span>
+                <!-- gallery item -->
+                <div class="col-lg-4 col-md-6 col-sm-6 sq-item" style="background-size: cover;">
+                    <div class="picframe wow zoomIn animated"
+                        style="background-size: cover; visibility: visible; animation-delay: 0.125s; animation-name: zoomIn;"
+                        data-wow-delay="0.125s">
+                        <div class="pf-click" data-value="project-details-slider.html" style="background-size: cover;">
+                            <span class="overlay">
+                                <span class="title">
+                                    <span>Fotografi</span>
+                                </span>
                             </span>
-                        </span>
-                        <img src="{% static 'core/images/portfolio/3.jpg' %}" class="wow animated" alt=""
-                            style="visibility: visible;">
+                            <img src="{% static 'core/images/portfolio/2.jpg' %}" class="wow animated" alt=""
+                                style="visibility: visible;">
+                        </div>
                     </div>
                 </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="col-lg-4 col-md-6 col-sm-6 sq-item wow animated"
+                    style="background-size: cover; visibility: visible;">
+                    <div class="picframe wow zoomIn animated"
+                        style="background-size: cover; visibility: visible; animation-delay: 0.25s; animation-name: zoomIn;"
+                        data-wow-delay="0.25s">
+                        <div class="pf-click" data-value="project-details-youtube.html" style="background-size: cover;">
+                            <span class="overlay">
+                                <span class="title">
+                                    <span>Fotografi</span>
+                                </span>
+                            </span>
+                            <img src="{% static 'core/images/portfolio/3.jpg' %}" class="wow animated" alt=""
+                                style="visibility: visible;">
+                        </div>
+                    </div>
+                </div>
+                <!-- close gallery item -->
             </div>
-            <!-- close gallery item -->
         </div>
         <!-- content close -->
 
