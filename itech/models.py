@@ -35,6 +35,7 @@ class PendaftaranValorant(models.Model):
         max_length=200, blank=False, null=False)
     Paham_dan_ingin_berpartisipasi = models.BooleanField(default=False)
     Bukti_Transaksi = models.ImageField()
+    Bukti_Pelajar = models.ImageField(null=True)
 
     def __str__(self):
         return self.Nama_Tim
@@ -50,6 +51,7 @@ class PendaftaranShortMovie(models.Model):
         max_length=200, blank=True, null=True)
     Paham_dan_ingin_berpartisipasi = models.BooleanField(default=False)
     Bukti_Transaksi = models.ImageField()
+    Bukti_Pelajar = models.ImageField(null=True)
 
     def __str__(self):
         return self.Nama_Kelompok

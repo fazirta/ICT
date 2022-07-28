@@ -6,7 +6,7 @@ class PendaftaranValorantForm(ModelForm):
     class Meta:
         model = models.PendaftaranValorant
         fields = ['Nama_Tim', 'Nomor_Whatsapp_dan_Line', 'Nomor_Whatsapp_dan_Line_opsional', 'Player_1', 'Nama_Lengkap_atau_Nama_Asli_1', 'Player_2', 'Nama_Lengkap_atau_Nama_Asli_2', 'Player_3', 'Nama_Lengkap_atau_Nama_Asli_3',
-                  'Player_4', 'Nama_Lengkap_atau_Nama_Asli_4', 'Player_5', 'Nama_Lengkap_atau_Nama_Asli_5', 'Player_6', 'Nama_Lengkap_atau_Nama_Asli_6', 'Paham_dan_ingin_berpartisipasi', 'Bukti_Transaksi']
+                  'Player_4', 'Nama_Lengkap_atau_Nama_Asli_4', 'Player_5', 'Nama_Lengkap_atau_Nama_Asli_5', 'Player_6', 'Nama_Lengkap_atau_Nama_Asli_6', 'Paham_dan_ingin_berpartisipasi', 'Bukti_Transaksi', 'Bukti_Pelajar']
 
     def __init__(self, *args, **kwargs):
         super(PendaftaranValorantForm, self).__init__(*args, **kwargs)
@@ -44,13 +44,15 @@ class PendaftaranValorantForm(ModelForm):
             {'placeholder': 'Saya memahami dan ingin berpartisipasi'})
         self.fields['Bukti_Transaksi'].widget.attrs.update(
             {'placeholder': 'Bukti Transaksi'})
+        self.fields['Bukti_Pelajar'].widget.attrs.update(
+            {'placeholder': 'Bukti Pelajar'})
 
 
 class PendaftaranShortMovieForm(ModelForm):
     class Meta:
         model = models.PendaftaranShortMovie
         fields = ['Nama_Kelompok', 'Nama_Perwakilan', 'Nama_Anggota',
-                  'Nomor_Whatsapp_dan_Line', 'Nomor_Whatsapp_dan_Line_opsional', 'Paham_dan_ingin_berpartisipasi', 'Bukti_Transaksi']
+                  'Nomor_Whatsapp_dan_Line', 'Nomor_Whatsapp_dan_Line_opsional', 'Paham_dan_ingin_berpartisipasi', 'Bukti_Transaksi', 'Bukti_Pelajar']
 
     def __init__(self, *args, **kwargs):
         super(PendaftaranShortMovieForm, self).__init__(*args, **kwargs)
@@ -68,3 +70,5 @@ class PendaftaranShortMovieForm(ModelForm):
             {'placeholder': 'Saya memahami dan ingin berpartisipasi'})
         self.fields['Bukti_Transaksi'].widget.attrs.update(
             {'placeholder': 'Bukti Transaksi'})
+        self.fields['Bukti_Pelajar'].widget.attrs.update(
+            {'placeholder': 'Bukti Pelajar'})
