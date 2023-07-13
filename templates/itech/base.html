@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>{% block title %} {% endblock %}</title>
+  <meta name="description" content="Ajang untuk menyalurkan hobi dan berkreasi bersama">
+  <meta name="keywords"
+    content="esports, game, game portal, Game website, gamer, games, gaming, match, modern, online game, sport, sports, design, i tech, itech, kompetisi, kreatifitas, lomba, man 4" />
+  <meta name="author" content="Fazil Tirtana" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Add site Favicon -->
+  <link rel="shortcut icon" href="{% static '/itech/assets/img/favicon.ico' %}" type="image/png" />
+
+  <!-- CSS 
+    ========================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Metal+Mania&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="{% static '/itech/assets/css/vendor/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/slick.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/icofont.min.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/animate.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/nice-select.css' %}" />
+  <link rel="stylesheet" href="{% static '/itech/assets/css/magnific-popup.css' %}" />
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="{% static '/itech/assets/css/style.css' %}" />
+</head>
+
+<body class="body__bg" data-bgimg="{% block body-bg %} {% endblock %}">
+  {% include 'itech/navbar.html' %} {% block content %} {% endblock %} {% include 'itech/footer.html' %}
+  <!-- JS
+============================================ -->
+  <!--modernizr min js here-->
+  <script src="{% static '/itech/assets/js/vendor/modernizr-3.7.1.min.js' %}"></script>
+
+  <!-- Vendor JS -->
+  <script src="{% static '/itech/assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static '/itech/assets/js/vendor/jquery-migrate-3.3.2.min.js' %}"></script>
+  <script src="{% static '/itech/assets/js/vendor/popper.js' %}"></script>
+  <script src="{% static '/itech/assets/js/vendor/bootstrap.min.js' %}"></script>
+  <script src="{% static '/itech/assets/js/slick.min.js' %}"></script>
+  <script src="{% static '/itech/assets/js/wow.min.js' %}"></script>
+  <script src="{% static '/itech/assets/js/jquery.nice-select.js' %}"></script>
+  <script src="{% static '/itech/assets/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static '/itech/assets/js/jquery.counterup.min.js' %}"></script>
+  <script src="{% static '/itech/assets/js/jquery-waypoints.js' %}"></script>
+
+  <!-- Main JS -->
+  <script src="{% static '/itech/assets/js/main.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Daftar Short Movie
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg2.webp' %}
+{% endblock %}
+
+{% block content %}
+<!-- breadcrumbs area start -->
+<div class="breadcrumbs_aree breadcrumbs_bg mb-140"
+  data-bgimg="{% static '/itech/assets/img/bg/breadcrumbs-bg.webp' %}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="breadcrumbs_text text-center">
+          <h1>Daftar</h1>
+          <ul class="d-flex justify-content-center">
+            <li><a href="index.html">Home </a></li>
+            <li><span>//</span></li>
+            <li>Daftar</li>
+            <li><span>//</span></li>
+            <li>Short Movie</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- breadcrumbs area end -->
+<!-- page wrapper start -->
+<div class="page_wrapper">
+  <!-- contact section start -->
+  <section class="contact_page_section mb-140">
+    <div class="container">
+      <div class="row justify-content-between align-items-center mb-n50">
+        <div class="col-md-8 col-12 mx-auto mb-50">
+          <form method="POST" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="section_title text-center mb-60">
+              <h2>Daftar Short Movie</h2>
+              </br>
+              <h4>
+                Silahkan isi semua kolom dibawah dengan data yang benar
+              </h4>
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Kelompok }}
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Perwakilan }}
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Anggota }}
+            </div>
+            <div class="form_input">
+              {{ form.Nomor_Whatsapp_dan_Line }}
+            </div>
+            <div class="form_input">
+              {{ form.Nomor_Whatsapp_dan_Line_opsional }}
+            </div>
+            <div class="form_input" style="margin-top: 4rem;">
+              <h3>Syarat dan Ketentuan</h3>
+              <p>
+                1. Peserta merupakan siswa/mahasiswa per tanggal pendaftaran dan mendaftar di link
+                https://ictman4jkt.com/itech/</br>
+                2. Lomba dilakukan dalam bentuk tim (anggota per tim tidak dibatasi)</br>
+                3. Peserta yang berada di satu tim boleh berasal dari berbagai instansi</br>
+                4. Peserta wajib follow akun Instagram @ict.man4</br>
+                5. Peserta wajib meng-upload poster I-TECH pada story Instagram (tag akun
+                Instagram @ict.man4)</br>
+                6. Biaya pendaftaran Rp60.000,00 per tim. Transfer ke Bank Mandiri 1270006135071
+                a.n. Fero</br>
+                7. Video harus sesuai dengan tema “Tech Reliability Improve Youth Validity” atau
+                tentang bagaimana dampak teknologi dalam kinerja pemuda dan bagaimana
+                pemuda memanfaatkannya</br>
+                8. Short movie diproduksi tahun 2022 dan belum pernah diikutsertakan pada lomba
+                lain</br>
+                9. Short movie berdurasi minimal 7 menit dan maksimal 15 menit termasuk credit title</br>
+                10. Video yang kurang atau lebih dari durasi yang ditentukan akan mendapatkan
+                pengurangan nilai</br>
+                11. Jenis short movie bebas (kecuali animasi)</br>
+                12. Wajib menggunakan subtitle bahasa Indonesia bagi film yang menggunakan bahasa
+                lokal atau asing</br>
+                13. Setiap tim maksimal mengirimkan 1 karya</br>
+                14. Video tidak melanggar HAKI, tidak mengandung unsur SARA dan pornografi</br>
+                15. Seluruh konten/isi video merupakan tanggung jawab peserta/pembuat. Apabila
+                dikemudikan hari terjadi gugatan hak cipta, panitia tidak bertanggung jawab</br>
+                16. Persyaratan file peserta:</br>
+                a. Resolusi : Minimal 720p</br>
+                b. Aspect Ratio :16:9</br>
+                c. Format : MOV atau mp4</br>
+                17. Peserta wajib memperhatikan copyright Ketika memilih gambar, music atau
+                instrument</br>
+                18. Semua Karya menjadi hak milik panitia</br>
+                19. Film yang telah dikirmkan tidak boleh dotarik atau diambil Kembali</br>
+                20. Keputusan hasil penjurian bersifat mutlak dan tidak dapat diganggu gugat</br>
+                21. Panitia berhak mendiskualifikasi karya yang melanggar ketentuan</br>
+              </p>
+            </div>
+            <div class="form_input" style="margin-bottom: 4rem;">
+              <h3>Saya memahami dan ingin berpartisipasi</h3>
+              <div style="display: flex;">
+                <input required type="checkbox" name="Paham_dan_ingin_berpartisipasi"
+                  placeholder="Saya memahami dan ingin berpartisipasi" id="id_Paham_dan_ingin_berpartisipasi" style="
+                display: inline;
+                width: auto;
+                height: auto;
+                padding: auto;
+                line-height: auto;
+                color: auto;
+                background: auto;
+                border: auto;
+                border-radius: auto;
+                margin-right: 1rem;">
+                <p>Ya</p>
+              </div>
+            </div>
+            <div>
+              <h4 style="margin: 2rem 0">
+                Lomba Short Movie dikenakan biaya sebesar 💳: Rp60.000/team
+                Silahkan melakukan pembayaran melalui rekening berikut: Mandiri 1270006135071 A/N fero
+                </br>
+                </br>
+                NOTE: silahkan gabung ke link group WhatsApp yang disediakan SETELAH submit Form ini
+              </h4>
+            </div>
+            <div class="form_input">
+              <h3>Upload Bukti Pembayaran</h3>
+              {{ form.Bukti_Transaksi }}
+            </div>
+            <div>
+              <h4 style="margin: 2rem 0">
+                Silahkan upload foto kartu pelajar atau screenshoot NISN siswa aktif
+              </h4>
+            </div>
+            <div class="form_input">
+              <h3>Upload Bukti Pelajar</h3>
+              {{ form.Bukti_Pelajar }}
+            </div>
+
+            <div class="form_input_btn text-center mb-40">
+              <h4>
+                Pastikan anda telah mengisi semua kolom diatas dengan data yang benar
+              </h4>
+              </br>
+              <button type="submit" class="btn btn-link" style="z-index: 0;">
+                Daftar
+                <img width="20" height="20" src="{% static '/itech/assets/img/icon/arrrow-icon.webp' %}" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section end -->
+</div>
+<!-- page wrapper end -->
+{% endblock %}

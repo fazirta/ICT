@@ -1,0 +1,91 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Kontak
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg2.webp' %}
+{% endblock %}
+
+{% block content %}
+<!-- breadcrumbs area start -->
+<div class="breadcrumbs_aree breadcrumbs_bg mb-140"
+  data-bgimg="{% static '/itech/assets/img/bg/breadcrumbs-bg.webp' %}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="breadcrumbs_text text-center">
+          <h1>Kontak</h1>
+          <ul class="d-flex justify-content-center">
+            <li><a href="index.html">Home </a></li>
+            <li><span>//</span></li>
+            <li>Kontak</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- breadcrumbs area end -->
+
+<!-- page wrapper start -->
+<div class="page_wrapper">
+  <!--game details section area start-->
+  <section class="game_details_section mb-125">
+    <div class="container">
+      <div class="section_title text-center wow fadeInUp mb-60" data-wow-delay="0.1s" data-wow-duration="1.1s">
+        <h2>
+          Kontak
+        </h2>
+      </div>
+      <div class="wow fadeInUp footer_widget_list contact" style="display: flex; justify-content: center;">
+        <div class="footer_contact_info" style="display: flex;">
+          <div class="footer_contact_info_list" style="margin: 0 1rem 0 1rem;">
+            <span>Satria (Valorant):</span>
+            <p><a
+                href="https://linevoom.line.me/user/_dfl-i_NNiNMkvIzU2W4Rms-NGu_89SSM5vH-cxQ?utm_medium=windows&utm_source=desktop&utm_campaign=Profile">satriarafi05</a>
+            </p>
+            <p><a href="#">081315005561</a></p>
+          </div>
+          <div class="footer_contact_info_list" style="margin: 0 1rem 0 1rem;">
+            <span>Arya (ShortMovie):</span>
+            <p><a
+                href="https://linevoom.line.me/user/_ddQI6DhbdRqa-lR2ESzzKJ6QkBI7PMbk0S_DBn4?utm_medium=windows&utm_source=desktop&utm_campaign=Profile">arya0456</a>
+            </p>
+            <p><a href="#">082211298700</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--game details section area end-->
+
+  <!-- gaming update section start -->
+  <section class="gaming_update_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="gaming_update_inner d-flex justify-content-between align-items-center"
+            data-bgimg="{% static '/itech/assets/img/bg/gaming-update.webp' %}">
+            <div class="gaming_update_text">
+              <h2>
+                Daftar I-tech 2022 <br />
+                Sekarang!
+              </h2>
+            </div>
+            <div class="gaming_update_btn">
+              <a class="btn btn-link" href="/itech/daftar">DAFTAR
+                <img width="20" height="20" src="{% static '/itech/assets/img/icon/arrrow-icon.webp' %}" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gaming update section end -->
+</div>
+<!-- page wrapper end -->
+{% endblock %}

@@ -1,0 +1,358 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="csstransforms csstransforms3d csstransitions">
+    <meta charset="utf-8">
+    <title>ICT | Fotografi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ekstrakurikuler ICT Madrasah Aliyah Negeri 4 Jakarta Selatan">
+    <meta name="author" content="">
+    <!-- Add site Favicon -->
+    <link rel="shortcut icon" href="{% static '/core/assets/img/favicon.ico' %}" type="image/png" />
+
+    <!--[if lt IE 9]>
+	<script src="{% static 'core/js/html5shiv.js"></script>
+	<![endif]-->
+
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap-grid.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap-reboot.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/animate.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/owl.carousel.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/owl.theme.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/owl.transitions.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/jquery.countdown.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/custom-font.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'core/css/colors/red.css' %}" type="text/css">
+</head>
+
+<body id="homepage">
+
+    <div id="wrapper">
+
+        <div class="page-overlay">
+            <div class="preloader-wrap">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header begin -->
+        <header class="smaller">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'core/assets/img/logo.png' %}" alt="">
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"></span>
+                        <!-- small button close -->
+
+                        <!-- mainmenu begin -->
+                        <nav>
+                            <ul id="mainmenu" class="style-2">
+                                <li><a class="active" href="/">Home</a></li>
+                                <li><a href="{% url 'itech' %}">I-Tech 2022</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <!-- mainmenu close -->
+
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <style>
+            #subheader {
+                padding-top: 80px;
+                background: url(images/bg-subheader.jpg) top;
+                background-position-x: center;
+                background-position-y: top;
+                background-image: url("images/bg-subheader.jpg");
+                background-size: auto;
+                background-size: cover;
+                text-align: center;
+            }
+
+            .no-bottom {
+                margin-bottom: 0 !important;
+                padding-bottom: 0;
+            }
+
+            .no-bottom {
+                padding-bottom: 0 !important;
+            }
+
+            section {
+                padding: 60px 0 60px 0;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                background: #fff;
+            }
+
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            main,
+            nav,
+            section,
+            summary {
+                display: block;
+            }
+
+            #subheader .overlay {
+                padding: 90px 0 60px 0;
+                background: rgba(0, 0, 0, .2);
+            }
+
+            .container {
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .row {
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            .small-border {
+                clear: both;
+                width: 80px;
+                height: 3px;
+                background: #D03232;
+                background-color: rgb(208, 50, 50);
+                margin: 20px auto 20px auto;
+            }
+
+            .flipInY {
+                -webkit-backface-visibility: visible !important;
+                backface-visibility: visible !important;
+                -webkit-animation-name: flipInY;
+                animation-name: flipInY;
+            }
+
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+        </style>
+
+        <!-- content begin -->
+        <div id="content" class="no-bottom no-top">
+            <section id="subheader" class="no-bottom" data-stellar-background-ratio="0.5"
+                style="background-position: 50% 0px; background-image: url({% static 'core/images/misc/66.jpg' %});">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 style="color: white;">Fotografi</h1>
+                                <div class="small-border wow flipInY" data-wow-delay=".8s" data-wow-duration=".8s"
+                                    style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.8s; animation-name: flipInY;">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-side-1" class="side-bg no-padding" data-bgcolor="#fdfdfd"
+                style="background-color: rgb(253, 253, 253); background-size: cover; --darkreader-inline-bgcolor: #191b1c;"
+                data-darkreader-inline-bgcolor="">
+                <div class="image-container col-md-6 pull-left d-block d-sm-none d-md-block"
+                    data-bgimage="{% static 'core/images/background/1.jpg' %}"
+                    style="background-image: url({% static 'core/images/background/1.jpg' %}); background-size: cover; height: 525px;">
+                </div>
+
+                <div class="container" style="background-size: cover;">
+                    <div class="row" style="background-size: cover;">
+                        <div class="inner-padding" style="background-size: cover;">
+                            <div class="col-md-5 offset-md-7 wow fadeIn animated"
+                                style="background-size: cover; visibility: visible; animation-name: fadeIn;">
+                                <h2 class="mb20">Bukan Sekedar Cekrek!</h2>
+                                <p>Seringkali orang beranggapan bahwa mengambil sebuah foto merupakan hal yang sangat
+                                    mudah, banyak yang menganggap bahwa mengambil foto itu hanya sekedar pencet tombol
+                                    lalu jadilah sebuah foto yang bagus. Padahal dalam kenyataanya banyak sekali aspek
+                                    yang harus dipelajari untuk dapat menghasilkan sebuah foto yang bagus.
+                                </p>
+                                <div class="spacer-half" style="background-size: cover;"></div>
+                                <a href="#section-contact" class="btn-custom scroll-to">Daftar</a>
+                            </div>
+                            <div class="clearfix" style="background-size: cover;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-bgcolor="#f9f9f9"
+                style="background-color: rgb(249, 249, 249); background-size: cover; --darkreader-inline-bgcolor: #1b1e1f;"
+                data-darkreader-inline-bgcolor="">
+                <div class="container" style="background-size: cover;">
+                    <div class="row" style="background-size: cover;">
+
+                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
+                            <h2>Kenali Kembali Esensi Fotografi</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
+                            <p>Maraknya media digital kini membuat siapa pun bisa menjadi seorang fotografer. Kumpulan
+                                foto yang seringkali diunggah menunjukkan cara berekspresi sang fotografer untuk para
+                                penikmatnya. Tapi, apakah kamu mengerti apa esensi dari sebuah karya fotografi?
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 col-md-12" style="background-size: cover;">
+                            <figure class="picframe mb30">
+                                <a class="image-popup" href="{% static 'core/images/misc/1.jpg' %}">
+                                    <span class="overlay-v">
+                                        <span class="v-center">
+                                            <span>Setiap peristiwa yang ditangkap kamera seharusnya memiliki latar
+                                                suasana yang menjadi ruh cerita untuk sebuah foto.</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <img src="{% static 'core/images/misc/1.jpg' %}" class="img-fullwidth" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="clearfix" style="background-size: cover;"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="row no-gutters gallery-wrap sequence_pf" style="background-size: cover;">
+
+                <!-- gallery item -->
+                <div class="col-lg-4 col-md-6 col-sm-6 sq-item" style="background-size: cover;">
+                    <div class="picframe wow zoomIn animated"
+                        style="background-size: cover; visibility: visible; animation-delay: 0s; animation-name: zoomIn;"
+                        data-wow-delay="0s">
+                        <div class="pf-click" data-value="project-details-image.html" style="background-size: cover;">
+                            <span class="overlay">
+                                <span class="title">
+                                    <span>Fotografi</span>
+                                </span>
+                            </span>
+                            <img src="{% static 'core/images/portfolio/1.jpg' %}" class="wow animated" alt=""
+                                style="visibility: visible;">
+                        </div>
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="col-lg-4 col-md-6 col-sm-6 sq-item" style="background-size: cover;">
+                    <div class="picframe wow zoomIn animated"
+                        style="background-size: cover; visibility: visible; animation-delay: 0.125s; animation-name: zoomIn;"
+                        data-wow-delay="0.125s">
+                        <div class="pf-click" data-value="project-details-slider.html" style="background-size: cover;">
+                            <span class="overlay">
+                                <span class="title">
+                                    <span>Fotografi</span>
+                                </span>
+                            </span>
+                            <img src="{% static 'core/images/portfolio/2.jpg' %}" class="wow animated" alt=""
+                                style="visibility: visible;">
+                        </div>
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="col-lg-4 col-md-6 col-sm-6 sq-item wow animated"
+                    style="background-size: cover; visibility: visible;">
+                    <div class="picframe wow zoomIn animated"
+                        style="background-size: cover; visibility: visible; animation-delay: 0.25s; animation-name: zoomIn;"
+                        data-wow-delay="0.25s">
+                        <div class="pf-click" data-value="project-details-youtube.html" style="background-size: cover;">
+                            <span class="overlay">
+                                <span class="title">
+                                    <span>Fotografi</span>
+                                </span>
+                            </span>
+                            <img src="{% static 'core/images/portfolio/3.jpg' %}" class="wow animated" alt=""
+                                style="visibility: visible;">
+                        </div>
+                    </div>
+                </div>
+                <!-- close gallery item -->
+            </div>
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 sm-mb10">
+                        <div class="mt10">&copy; Copyright 2022 - ICT by Fazil Tirtana </div>
+                    </div>
+
+                    <div class="col-md-6 text-left text-md-right">
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/ict.man4jkt/"><i class="fa fa-instagram fa-lg"
+                                    style="background: #000000;"></i></a>
+                            <a href="https://www.youtube.com/c/ICTMAN4Jakarta"><i class="fa fa-youtube fa-lg"
+                                    style="background: rgba(204, 0, 0, 0.9);"></i></a>
+                            <a href="https://www.twitch.tv/ictman4jkt"><i class="fa fa-twitch fa-lg"
+                                    style="background: #772ce8;"></i></a>
+                            <a href="https://twitter.com/ict4official"><i class="fa fa-twitter fa-lg"
+                                    style="background: rgb(29, 155, 240);"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- footer close -->
+
+        <a href="/" id="back-to-top"></a>
+
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="{% static 'core/js/jquery.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'core/js/easing.js' %}"></script>
+    <script src="{% static 'core/js/owl.carousel.js' %}"></script>
+    <script src="{% static 'core/js/jquery.countTo.js' %}"></script>
+    <script src="{% static 'core/js/wow.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'core/js/enquire.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.plugin.js' %}"></script>
+    <script src="{% static 'core/js/jquery.easeScroll.js' %}"></script>
+    <script src="{% static 'core/js/designesia1.js' %}"></script>
+    <script src="{% static 'core/js/validation.js' %}"></script>
+
+</body>
+
+</html>

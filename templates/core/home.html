@@ -1,0 +1,699 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ekstrakurikuler ICT Madrasah Aliyah Negeri 4 Jakarta Selatan">
+	<meta name="author" content="Fazil Tirtana">
+	<meta name="keywords"
+		content="Extracurricular, ICT, ICTMAN4JKT, ICTMAN4JKT.COM, MAN4JKT, MAN4, MAN 4, MAN 4 JAKARTA, Photography, Programming, Videography, Graphic Design, Music Making, Modern, Technology, Information, Communication, Design, Creativity, " />
+	<title>ICT - Award Winning extracurricular</title>
+	<link rel="shortcut icon" href="{% static 'core/assets/img/favicon.ico' %}">
+	<link rel="stylesheet" href="{% static 'core/assets/css/plugins.css' %}">
+	<link rel="stylesheet" href="{% static 'core/assets/css/style.css' %}">
+</head>
+
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			<div class="alert bg-primary text-white alert-dismissible fade show rounded-0 mb-0 text-lg-center"
+				role="alert">
+				<div class="container">
+					<div class="alert-inner p-0">
+						<span class="badge badge-lg bg-white text-primary text-uppercase rounded me-2">Update</span>
+						We're recruiting, <a href="/" class="alert-link link-white hover">Join</a> our team!
+					</div>
+					<!-- /.alert-inner -->
+				</div>
+				<!-- /.container -->
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			<nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none">
+				<div class="container flex-lg-row flex-nowrap align-items-center">
+					<div class="navbar-brand w-100">
+						<a href="/">
+							<img class="logo-dark" src="{% static 'core/assets/img/logo.png' %}"
+								srcset="{% static 'core/assets/img/logoat2x.png" alt="" />
+							<img class="logo-light" src="{% static 'core/assets/img/logo-light.png' %}"
+								srcset="{% static 'core/assets/img/logo-lightat2x.png" alt="" />
+						</a>
+					</div>
+					<div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+						<div class="offcanvas-header d-lg-none">
+							<h3 class="text-white fs-30 mb-0">ICT</h3>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+								aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="/">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/">About</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="/" data-bs-toggle="dropdown">Our Works</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown dropdown-submenu dropend"><a
+												class="dropdown-item dropdown-toggle" href="/"
+												data-bs-toggle="dropdown">Photography</a>
+											<ul class="dropdown-menu">
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown dropdown-submenu dropend"><a
+												class="dropdown-item dropdown-toggle" href="/"
+												data-bs-toggle="dropdown">Videography</a>
+											<ul class="dropdown-menu">
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown dropdown-submenu dropend"><a
+												class="dropdown-item dropdown-toggle" href="/"
+												data-bs-toggle="dropdown">Graphic Design</a>
+											<ul class="dropdown-menu">
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown dropdown-submenu dropend"><a
+												class="dropdown-item dropdown-toggle" href="/"
+												data-bs-toggle="dropdown">Programming</a>
+											<ul class="dropdown-menu">
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown dropdown-submenu dropend"><a
+												class="dropdown-item dropdown-toggle" href="/"
+												data-bs-toggle="dropdown">Music Making</a>
+											<ul class="dropdown-menu">
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+												<li class="nav-item"><a class="dropdown-item" href="/">Portofolio</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="/" data-bs-toggle="dropdown">Team</a>
+									<div class="dropdown-menu dropdown-lg">
+										<div class="dropdown-lg-content">
+											<div>
+												<h6 class="dropdown-header">BPH</h6>
+												<ul class="list-unstyled">
+													<li><a class="dropdown-item" href="/">.</a></li>
+													<li><a class="dropdown-item" href="/">.</a></li>
+													<li><a class="dropdown-item" href="/">.</a></li>
+												</ul>
+											</div>
+											<!-- /.column -->
+											<div>
+												<h6 class="dropdown-header">Mentors</h6>
+												<ul class="list-unstyled">
+													<li><a class="dropdown-item" href="/">.</a></li>
+													<li><a class="dropdown-item" href="/">.</a></li>
+													<li><a class="dropdown-item" href="/">.</a></li>
+												</ul>
+											</div>
+											<!-- /.column -->
+										</div>
+										<!-- /auto-column -->
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="/" data-bs-toggle="dropdown">Division</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="dropdown-item" href="/">Photography</a></li>
+										<li class="nav-item"><a class="dropdown-item" href="/">Videography</a></li>
+										<li class="nav-item"><a class="dropdown-item" href="/">Graphic Design</a></li>
+										<li class="nav-item"><a class="dropdown-item" href="/">Programming</a></li>
+										<li class="nav-item"><a class="dropdown-item" href="/">Music Making</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="{% url 'itech' %}">I-Tech 2022</a>
+								</li>
+							</ul>
+							<!-- /.navbar-nav -->
+							<div class="offcanvas-footer d-lg-none">
+								<div>
+									<a href="mailto:support@ictman4jkt.com">
+										<span>support@ictman4jkt.com</span>
+									</a>
+									<br />00 (021) 769 02 83<br />
+									<nav class="nav social social-white mt-4">
+										<a href="https://twitter.com/ICT4Official"><i class="uil uil-twitter"></i></a>
+										<a href="https://instagram.com/ict.man4jkt"><i
+												class="uil uil-instagram"></i></a>
+										<a href="https://www.youtube.com/@ICTMAN4Jakarta"><i
+												class="uil uil-youtube"></i></a>
+									</nav>
+									<!-- /.social -->
+								</div>
+							</div>
+							<!-- /.offcanvas-footer -->
+						</div>
+						<!-- /.offcanvas-body -->
+					</div>
+					<!-- /.navbar-collapse -->
+					<div class="navbar-other w-100 d-flex ms-auto">
+						<ul class="navbar-nav flex-row align-items-center ms-auto">
+							<li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas"
+									data-bs-target="#offcanvas-info"><i class="uil uil-info-circle"></i></a></li>
+							<li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas"
+									data-bs-target="#offcanvas-search"><i class="uil uil-search"></i></a></li>
+							<li class="nav-item d-lg-none">
+								<button class="hamburger offcanvas-nav-btn"><span></span></button>
+							</li>
+						</ul>
+						<!-- /.navbar-nav -->
+					</div>
+					<!-- /.navbar-other -->
+				</div>
+				<!-- /.container -->
+			</nav>
+			<!-- /.navbar -->
+			<div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
+				<div class="offcanvas-header">
+					<h3 class="text-white fs-30 mb-0">ICT</h3>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+						aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body pb-6">
+					<div class="widget mb-8">
+						<p>ICT is an extracurricular that focuses on technology, information and communication. Here
+							we can channel our hobbies in the IT field. From playing games to making your own game!</p>
+					</div>
+					<!-- /.widget -->
+					<div class="widget mb-8">
+						<h4 class="widget-title text-white mb-3">Contact Info</h4>
+						<address> Ciputat Raya St. 05/05/08 <br /> Pondok Pinang, Kebayoran Lama, Jakarta Selatan
+						</address>
+						<a href="mailto:support@ictman4jkt.com"><span>support@ictman4jkt.com</span></a><br /> 00
+						(021) 769 02 83
+					</div>
+					<!-- /.widget -->
+					<div class="widget mb-8">
+						<h4 class="widget-title text-white mb-3">Learn More</h4>
+						<ul class="list-unstyled">
+							<li><a href="/">Our Story</a></li>
+							<li><a href="/">Contact Us</a></li>
+						</ul>
+					</div>
+					<!-- /.widget -->
+					<div class="widget">
+						<h4 class="widget-title text-white mb-3">Follow Us</h4>
+						<nav class="nav social social-white">
+							<a href="https://twitter.com/ICT4Official"><i class="uil uil-twitter"></i></a>
+							<a href="https://instagram.com/ict.man4jkt"><i class="uil uil-instagram"></i></a>
+							<a href="https://www.youtube.com/@ICTMAN4Jakarta"><i class="uil uil-youtube"></i></a>
+						</nav>
+						<!-- /.social -->
+					</div>
+					<!-- /.widget -->
+				</div>
+				<!-- /.offcanvas-body -->
+			</div>
+			<!-- /.offcanvas -->
+			<div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
+				<div class="container d-flex flex-row py-6">
+					<form class="search-form w-100">
+						<input id="search-form" type="text" class="form-control"
+							placeholder="Type keyword and hit enter">
+					</form>
+					<!-- /.search-form -->
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.offcanvas -->
+		</header>
+		<!-- /header -->
+		<section class="wrapper bg-dark">
+			<div class="swiper-container swiper-hero dots-over" data-margin="0" data-autoplay="true"
+				data-autoplaytime="7000" data-nav="true" data-dots="true" data-items="1">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image"
+							data-image-src="{% static 'core/assets/img/photos/43152.jpg' %}">
+							<div class="container h-100">
+								<div class="row h-100">
+									<div
+										class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
+										<h2
+											class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">
+											Ignite Your Passion for Technology</h2>
+										<p
+											class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">
+											Explore ICT, Unleash Creativity, and Shape the Future!</p>
+										<div class="animate__animated animate__slideInUp animate__delay-3s"><a href="/"
+												class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div>
+									</div>
+									<!--/column -->
+								</div>
+								<!--/.row -->
+							</div>
+							<!--/.container -->
+						</div>
+						<!--/.swiper-slide -->
+						<div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image"
+							data-image-src="{% static 'core/assets/img/photos/43152.jpg' %}">
+							<div class="container h-100">
+								<div class="row h-100">
+									<div
+										class="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center">
+										<h2
+											class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">
+											Unleash Your Creativity with ICT</h2>
+										<p
+											class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">
+											Discover Coding, Graphic Design, Videography, Photography, and Music Making.
+										</p>
+										<div class="animate__animated animate__slideInUp animate__delay-3s"><a
+												href="{% static 'core/assets/media/movie.mp4' %}"
+												class="btn btn-circle btn-white btn-play ripple mx-auto mb-5"
+												data-glightbox><i class="icn-caret-right"></i></a></div>
+									</div>
+									<!--/column -->
+								</div>
+								<!--/.row -->
+							</div>
+							<!--/.container -->
+						</div>
+						<!--/.swiper-slide -->
+						<div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image"
+							data-image-src="{% static 'core/assets/img/photos/43152.jpg' %}">
+							<div class="container h-100">
+								<div class="row h-100">
+									<div
+										class="col-md-10 offset-md-1 col-lg-7 offset-lg-5 col-xl-6 offset-xl-6 col-xxl-5 offset-xxl-6 text-center text-lg-start justify-content-center align-self-center align-items-start">
+										<h2
+											class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">
+											Join the ICT Revolution</h2>
+										<p
+											class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">
+											Empower Yourself in the Digital Age, Join Today!</p>
+										<div class="animate__animated animate__slideInUp animate__delay-3s"><a href="/"
+												class="btn btn-lg btn-outline-white rounded-pill">Contact Us</a></div>
+									</div>
+									<!--/column -->
+								</div>
+								<!--/.row -->
+							</div>
+							<!--/.container -->
+						</div>
+						<!--/.swiper-slide -->
+					</div>
+					<!--/.swiper-wrapper -->
+				</div>
+				<!-- /.swiper -->
+			</div>
+			<!-- /.swiper-container -->
+		</section>
+		<section class="wrapper bg-light">
+			<div class="container py-15 py-md-17">
+				<div class="row text-center">
+					<div class="col-md-10 col-lg-9 col-xxl-8 mx-auto">
+						<h2 class="fs-15 text-uppercase text-muted mb-3">DIVISION</h2>
+						<h3 class="display-3 ls-sm mb-9 px-xl-11">Several related sectors that focus on the
+							development of technology, information and communication.</h3>
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+				<div class="row gx-lg-8 gx-xl-12 gy-8">
+					<div class="col-md-6 col-lg-4">
+						<div class="d-flex flex-row">
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+									data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/employees.svg"
+									class="svg-inject icon-svg icon-svg-md text-blue me-5 mt-1">
+									<path class="lineal-fill"
+										d="M72.11 86.51l-3.52-21 1.41-1.4-4.36-4.48a24.12 24.12 0 01-5.78-24.43c.11-.32.2-.53.32-.85l-1.4-.21-9-18.88a8 8 0 00-14.49 0l-8.88 19-19.69 3.07a8 8 0 00-6.29 5.44 7.94 7.94 0 001.92 8.11l14.51 14.83-3.42 21A8.07 8.07 0 0021.33 96a8.33 8.33 0 004-1l17.49-9.81 17.6 9.6a8.2 8.2 0 008.53-.43 8 8 0 003.21-7.89zm183.46-44.06a7.85 7.85 0 00-6.4-5.33l-19.73-3-9-18.88a8 8 0 00-14.5 0l-8.86 19-1.17.21c0 .11.11.21.11.32a23.76 23.76 0 01-5.44 24.32L185.81 64l1.71 1.71-3.41 21A8.07 8.07 0 00192 96a8.33 8.33 0 004-1l17.49-9.81 17.6 9.6a8.2 8.2 0 008.53-.43 8.06 8.06 0 003.2-7.89l-3.52-21 14.51-14.92a8.09 8.09 0 001.81-8.13z">
+									</path>
+									<path class="lineal-stroke"
+										d="M100.18 106.67a8 8 0 01-7.91-9.25l4.61-28.8L77 48.37a8 8 0 014.46-13.51l27.09-4.22 12.11-26a8 8 0 017.2-4.64 8 8 0 017.23 4.58l12.29 25.9 27.12 4.05A8 8 0 01179.09 48l-19.78 20.38 4.8 28.77a8 8 0 01-11.74 8.34l-24.19-13.25-24.12 13.42a7.94 7.94 0 01-3.88 1z">
+									</path>
+									<circle class="lineal-fill" cx="42.67" cy="160" r="21.33"></circle>
+									<path class="lineal-fill"
+										d="M71.15 196.27A44.71 44.71 0 0053.34 232v2.67H8a8.06 8.06 0 01-8-8v-5.33A29.32 29.32 0 0129.33 192H56a29.13 29.13 0 0115.15 4.27z">
+									</path>
+									<circle class="lineal-fill" cx="213.33" cy="160" r="21.33"></circle>
+									<path class="lineal-fill"
+										d="M256 221.33v5.33a8.07 8.07 0 01-8 8h-45.33V232a44.69 44.69 0 00-17.81-35.73A29.07 29.07 0 01200 192h26.67A29.32 29.32 0 01256 221.33z">
+									</path>
+									<circle class="lineal-stroke" cx="128" cy="154.67" r="32"></circle>
+									<path class="lineal-stroke"
+										d="M157.33 202.67H98.66A29.35 29.35 0 0069.33 232v16a8 8 0 008 8h101.33a8 8 0 008-8v-16a29.35 29.35 0 00-29.33-29.33z">
+									</path>
+								</svg>
+							</div>
+							<div>
+								<h4 class="fs-20 ls-sm">Photography</h4>
+								<p class="mb-0">The activity of taking pictures through a camera to produce artwork and
+									can be enjoyed both yourself and the public.</p>
+							</div>
+						</div>
+					</div>
+					<!--/column -->
+					<div class="col-md-6 col-lg-4">
+						<div class="d-flex flex-row">
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 442.8"
+									data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/lineal/browser.svg"
+									class="svg-inject icon-svg icon-svg-md text-yellow me-5 mt-1">
+									<path class="lineal-stroke"
+										d="M464.2 442.8H47.7C21.4 442.8 0 421.4 0 395.1V47.7C0 21.4 21.4 0 47.7 0h416.5C490.6 0 512 21.4 512 47.7c0 7.6-6.2 13.8-13.8 13.9-7.6 0-13.8-6.2-13.9-13.8 0-11.1-9-20-20.1-20.1H47.7c-11.1 0-20 9-20.1 20.1v347.3c0 11.1 9 20.1 20.1 20.1h416.5c11.1 0 20.1-9 20.1-20.1V209.4c0-7.6 6.2-13.8 13.8-13.9 7.6 0 13.8 6.2 13.9 13.8V395c0 26.4-21.4 47.8-47.8 47.8z">
+									</path>
+									<path class="lineal-fill"
+										d="M13.8 47.7v69.9h484.3V47.7c0-18.7-15.2-33.9-33.9-33.9H47.7C29 13.8 13.8 29 13.8 47.7z">
+									</path>
+									<path class="lineal-stroke"
+										d="M498.2 131.5H13.8c-7.6 0-13.8-6.2-13.8-13.8v-70C0 21.4 21.4 0 47.7 0h416.5C490.6 0 512 21.4 512 47.7v69.9c0 7.7-6.2 13.9-13.8 13.9zM27.7 103.8h456.6v-56c0-11.1-9-20.1-20.1-20.1H47.8c-11.1 0-20 9-20.1 20v56.1z">
+									</path>
+									<path class="lineal-stroke"
+										d="M294.7 79.6h-26.3c-7.6 0-13.8-6.2-13.8-13.8S260.8 52 268.4 52h26.3c7.6 0 13.8 6.2 13.8 13.8.1 7.6-6.1 13.8-13.8 13.8zm73.4 0h-26.3c-7.6 0-13.8-6.2-13.8-13.8 0-7.6 6.2-13.8 13.8-13.8h26.3c7.6 0 13.8 6.2 13.8 13.8 0 7.6-6.2 13.8-13.8 13.8zm73.3 0h-26.3c-7.6 0-13.8-6.2-13.8-13.8 0-7.6 6.2-13.8 13.8-13.8h26.3c7.6 0 13.8 6.2 13.8 13.8.1 7.6-6.1 13.8-13.8 13.8z">
+									</path>
+									<path class="lineal-fill" d="M112.8 268.5h286.4v63.6H112.8z"></path>
+									<path class="lineal-stroke"
+										d="M399.2 345.9H112.8c-7.6 0-13.8-6.2-13.8-13.8v-63.7c0-7.6 6.2-13.8 13.8-13.8h286.4c7.6 0 13.8 6.2 13.8 13.8v63.7c.1 7.6-6.1 13.8-13.8 13.8zm-272.6-27.6h258.8v-36H126.6v36zm230.9-95.5h-203c-7.6.2-14-5.8-14.2-13.5s5.8-14 13.5-14.2h203.8c7.6-.2 14 5.8 14.2 13.5s-5.8 14-13.5 14.2h-.8z">
+									</path>
+								</svg>
+							</div>
+							<div>
+								<h4 class="fs-20 ls-sm">Videography</h4>
+								<p class="mb-0">The process of making moving images or videos uses electronic equipment
+									such as cameras.</p>
+							</div>
+						</div>
+					</div>
+					<!--/column -->
+					<div class="col-md-6 col-lg-4">
+						<div class="d-flex flex-row">
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+									data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/lamp.svg"
+									class="svg-inject icon-svg icon-svg-md text-orange me-5 mt-1">
+									<path class="lineal-stroke"
+										d="M128 36.86a8 8 0 01-8-8V8a8 8 0 0116 0v20.86a8 8 0 01-8 8zm70.1 29.04a8 8 0 01-5.67-13.64l14.77-14.77a8 8 0 1111.31 11.31l-14.77 14.77a8 8 0 01-5.64 2.33zM248 136h-20.86a8 8 0 010-16H248a8 8 0 010 16zm-35.15 84.85a8.06 8.06 0 01-5.67-2.34l-14.76-14.77a8 8 0 0111.31-11.31l14.77 14.77a8 8 0 010 11.31 7.92 7.92 0 01-5.65 2.34zm-169.7 0a8 8 0 01-5.66-13.65l14.77-14.77a8 8 0 0111.31 11.31L48.8 218.51a7.93 7.93 0 01-5.65 2.34zM28.86 136H8a8 8 0 010-16h20.86a8 8 0 110 16zM57.9 65.9a8 8 0 01-5.66-2.33L37.47 48.8a8 8 0 1111.31-11.31l14.77 14.77A8 8 0 0157.9 65.9z">
+									</path>
+									<path class="lineal-fill"
+										d="M160 224v13.33A18.76 18.76 0 01141.33 256h-26.67c-9 0-18.66-6.83-18.66-21.76V224zm15-154a74.93 74.93 0 00-63-15c-28.27 5.91-51.2 29-57.07 57.21a74.74 74.74 0 0028.16 75.41A32.19 32.19 0 0195.25 208v.12A2 2 0 0196 208h64a.93.93 0 01.53.11V208c1.49-8.11 6.29-15.57 13.65-21.33A74.72 74.72 0 00175 70zm-7 63.36a8.06 8.06 0 01-8-8A29.32 29.32 0 00130.67 96a8 8 0 110-16A45.43 45.43 0 01176 125.33a8.06 8.06 0 01-8 8z">
+									</path>
+									<path class="lineal-stroke" d="M95.25 208H96a1.8 1.8 0 00-.75.11z"></path>
+									<path class="lineal-fill" d="M160.53 208v.11a.93.93 0 00-.53-.11z"></path>
+								</svg>
+							</div>
+							<div>
+								<h4 class="fs-20 ls-sm">Graphic Design</h4>
+								<p class="mb-0">The form of painting to create or manage visual elements such as
+									illustrations, photos, writing, and lines above a media.</p>
+							</div>
+						</div>
+					</div>
+					<!--/column -->
+					<div class="col-md-6 col-lg-4">
+						<div class="d-flex flex-row">
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.02 213.34"
+									data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/script.svg"
+									class="svg-inject icon-svg icon-svg-md text-pink me-5 mt-1">
+									<path class="lineal-fill"
+										d="M162.66 106.34a8 8 0 01-6.06-13.2l11.54-13.47-11.54-13.45a8 8 0 1112.14-10.42l16 18.67a8 8 0 010 10.42l-16 18.67a8 8 0 01-6.08 2.78zm-69.31 0a8 8 0 01-6.08-2.78l-16-18.67a8 8 0 010-10.42l16-18.67a8 8 0 0112.15 10.42L87.88 79.67l11.54 13.46a8 8 0 01-6.07 13.21zm24.87 15.8a8 8 0 01-6-9.6l16-69.33a8 8 0 1115.6 3.6l-16 69.33a8 8 0 01-9.6 6z">
+									</path>
+									<path class="lineal-stroke"
+										d="M237.33 0H18.67A18.76 18.76 0 000 18.67v144a18.76 18.76 0 0018.67 18.67h81.68c-1.25 5.35-4.57 14-13.45 22.9a5.33 5.33 0 003.77 9.1h74.67a5.33 5.33 0 003.78-9.1c-8.86-8.86-12.27-17.54-13.6-22.9h81.82A18.77 18.77 0 00256 162.67v-144A18.79 18.79 0 00237.33 0zm-2.66 138.67H21.33V21.34h213.33v117.33z">
+									</path>
+								</svg>
+							</div>
+							<div>
+								<h4 class="fs-20 ls-sm">Programming</h4>
+								<p class="mb-0">A process of writing and testing so that the program can be made, and
+									the results are according to what they want.</p>
+							</div>
+						</div>
+					</div>
+					<!--/column -->
+					<div class="col-md-6 col-lg-4">
+						<div class="d-flex flex-row">
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 244.09"
+									data-inject-url="https://sandbox.elemisthemes.com/assets/img/icons/solid/headphone.svg"
+									class="svg-inject icon-svg icon-svg-md text-green me-5 mt-1">
+									<path class="lineal-stroke"
+										d="M35.72 92.28a92.28 92.28 0 01184.56 0v47.63a8.93 8.93 0 01-17.86 0V92.28a74.42 74.42 0 10-148.84 0v47.63a8.93 8.93 0 11-17.86 0zm175.63 62.51a8.93 8.93 0 018.93 8.93v35.72a32.75 32.75 0 01-32.75 32.75h-35.72a8.94 8.94 0 010-17.87h35.72a14.88 14.88 0 0014.89-14.88v-35.72a8.93 8.93 0 018.93-8.93z">
+									</path>
+									<path class="lineal-stroke"
+										d="M107.16 223.26A20.84 20.84 0 01128 202.42h11.91a20.84 20.84 0 010 41.67H128a20.84 20.84 0 01-20.84-20.83zm20.84-3a3 3 0 100 5.95h11.91a3 3 0 000-5.95z">
+									</path>
+									<path class="lineal-fill"
+										d="M32.74 107.16A32.74 32.74 0 000 139.91v23.81a32.75 32.75 0 0032.74 32.75h11.91a8.93 8.93 0 008.93-8.94v-71.44a8.93 8.93 0 00-8.93-8.93zm190.52 0A32.74 32.74 0 01256 139.91v23.81a32.75 32.75 0 01-32.74 32.75h-11.91a8.93 8.93 0 01-8.93-8.94v-71.44a8.93 8.93 0 018.93-8.93z">
+									</path>
+								</svg>
+							</div>
+							<div>
+								<h4 class="fs-20 ls-sm">Music Making</h4>
+								<p class="mb-0">A series of audio production, especially music, for a variety of
+									purposes, both private and industrial.</p>
+							</div>
+						</div>
+					</div>
+					<!--/column -->
+				</div>
+				<!--/.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<div class="container">
+			<div class="row gy-10 gy-sm-13 gx-lg-3 align-items-center mb-4 mb-md-6 mb-lg-10">
+				<div class="col-md-8 col-lg-6 position-relative">
+					<a href="{% static 'core/assets/media/movie.mp4' %}"
+						class="btn btn-circle btn-primary btn-play ripple mx-auto mb-5 position-absolute"
+						style="top:50%; left: 50%; transform: translate(-50%,-50%); z-index:3;" data-glightbox=""><i
+							class="icn-caret-right"></i></a>
+					<div class="shape rounded bg-soft-primary rellax d-md-block" data-rellax-speed="0"
+						style="bottom: -1.8rem; right: -1.5rem; width: 85%; height: 90%; transform: translate3d(0px, 0px, 0px);">
+					</div>
+					<figure class="rounded"><img src="{% static 'core/assets/img/photos/about12.jpg' %}" alt="">
+					</figure>
+				</div>
+				<!--/column -->
+				<div class="col-lg-5 offset-lg-1">
+					<h2 class="fs-15 text-uppercase text-muted mb-3">Who Are We?</h2>
+					<h3 class="display-4 mb-6">Extracurricular in the fields of technology, information and
+						communication.</h3>
+					<p class="mb-6">ICT is an extracurricular which is engaged in technology, information and
+						communication. Here we can channel our hobbies in the IT field. From playing games to making
+						your own game!</p>
+					<div class="row gy-3 gx-xl-8">
+						<div class="col-xl-6">
+							<ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+								<li><span><i class="uil uil-check"></i></span><span>Developing a hobby into something
+										more useful</span></li>
+								<li class="mt-3"><span><i class="uil uil-check"></i></span><span>Expanding knowledge in
+										the IT field</span></li>
+							</ul>
+						</div>
+						<!--/column -->
+						<div class="col-xl-6">
+							<ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+								<li><span><i class="uil uil-check"></i></span><span>Can make a creation that can be
+										useful in the future.</span></li>
+								<li class="mt-3"><span><i class="uil uil-check"></i></span><span>We control the
+										technology</span></li>
+							</ul>
+						</div>
+						<!--/column -->
+					</div>
+					<!--/.row -->
+				</div>
+				<!--/column -->
+			</div>
+			<!--/.card -->
+		</div>
+		<section class="wrapper bg-light">
+			<div class="container">
+				<!--/.row -->
+				<div class="card bg-soft-primary rounded-4">
+					<div class="card-body p-md-10 p-xl-11">
+						<div class="row gx-lg-8 gx-xl-12 gy-10">
+							<div class="col-lg-6">
+								<h3 class="display-4 mb-4">Frequently Asked Questions</h3>
+								<p class="lead fs-lg mb-0">If you don't see an answer to your question, you can send us
+									an email from our contact form.</p>
+							</div>
+							<!--/column -->
+							<div class="col-lg-6">
+								<div class="accordion accordion-wrapper" id="accordionExample">
+									<div class="card plain accordion-item">
+										<div class="card-header" id="headingOne">
+											<button class="collapsed" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="false"
+												aria-controls="collapseOne">What does ICT stands for?</button>
+										</div>
+										<div id="collapseOne" class="accordion-collapse collapse"
+											aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											<div class="card-body">
+												<p>ICT stands for "Information Communication and Technology". An
+													extracurricular in MAN 4 Jakarta that unfolds and evolve students
+													interest in Technology.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card plain accordion-item">
+										<div class="card-header" id="headingFour">
+											<button class="collapsed" data-bs-toggle="collapse"
+												data-bs-target="#collapseFour" aria-expanded="false"
+												aria-controls="collapseFour">What makes ICT different besides other
+												extracurricular?</button>
+										</div>
+										<div id="collapseFour" class="accordion-collapse collapse"
+											aria-labelledby="headingFour" data-bs-parent="#accordionExample" style="">
+											<div class="card-body">
+												<p>ICT extracurricular activities differ from others by focusing on
+													technology, practical skills development, and fostering creativity
+													and innovation.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card plain accordion-item">
+										<div class="card-header" id="headingTwo">
+											<button class="collapsed" data-bs-toggle="collapse"
+												data-bs-target="#collapseTwo" aria-expanded="false"
+												aria-controls="collapseTwo">How can i join ICT?</button>
+										</div>
+										<div id="collapseTwo" class="accordion-collapse collapse"
+											aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											<div class="card-body">
+												<p> By completing the registration process, you gain access to a vibrant
+													community of technology enthusiasts, where you can develop your
+													skills, explore new horizons, and unleash your potential in the
+													exciting realm of ICT.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card plain accordion-item">
+										<div class="card-header" id="headingThree">
+											<button class="collapsed" data-bs-toggle="collapse"
+												data-bs-target="#collapseThree" aria-expanded="false"
+												aria-controls="collapseThree">Are there any
+												requirements to join
+												ICT?</button>
+										</div>
+										<div id="collapseThree" class="accordion-collapse collapse"
+											aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+											<div class="card-body">
+												<p>Passion for technology is the primary criterion for joining an ICT
+													extracurricular.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/.accordion -->
+							</div>
+							<!--/column -->
+						</div>
+						<!--/.row -->
+					</div>
+					<!--/.card-body -->
+				</div>
+				<!--/.card -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-dark text-inverse mt-4 mt-md-6 mt-lg-10">
+		<div class="container py-13 py-md-15">
+			<div class="row gy-6 gy-lg-0">
+				<div class="col-lg-4">
+					<div class="widget">
+						<img class="mb-4" src="{% static 'core/assets/img/logo-light.png' %}"
+							srcset="{% static 'core/assets/img/logo-lightat2x.png" alt="" />
+						<p class="mb-4">© 2022 ICT </br> Made with ❤️ by <a href="https://faziltirtana.vercel.app"
+								style="color: #3f78e0">Fazil Tirtana</a></p>
+						<nav class="nav social social-white">
+							<a href="https://twitter.com/ICT4Official"><i class="uil uil-twitter"></i></a>
+							<a href="https://instagram.com/ict.man4jkt"><i class="uil uil-instagram"></i></a>
+							<a href="https://www.youtube.com/@ICTMAN4Jakarta"><i class="uil uil-youtube"></i></a>
+						</nav>
+						<!-- /.social -->
+					</div>
+					<!-- /.widget -->
+				</div>
+				<!-- /column -->
+				<div class="col-md-4 col-lg-2 offset-lg-2">
+					<div class="widget">
+						<h4 class="widget-title mb-3 text-white">Need Help?</h4>
+						<ul class="list-unstyled mb-0">
+							<li><a href="/">Support</a></li>
+							<li><a href="/">Contact</a></li>
+						</ul>
+					</div>
+					<!-- /.widget -->
+				</div>
+				<!-- /column -->
+				<div class="col-md-4 col-lg-2">
+					<div class="widget">
+						<h4 class="widget-title mb-3 text-white">Learn More</h4>
+						<ul class="list-unstyled mb-0">
+							<li><a href="/">About Us</a></li>
+							<li><a href="/">Projects</a></li>
+						</ul>
+					</div>
+					<!-- /.widget -->
+				</div>
+				<!-- /column -->
+				<div class="col-md-4 col-lg-2">
+					<div class="widget">
+						<h4 class="widget-title mb-3 text-white">Get in Touch</h4>
+						<address> Ciputat Raya St. 05/05/08 <br /> Pondok Pinang, Kebayoran Lama, Jakarta Selatan
+						</address>
+						<a href="mailto:support@ictman4jkt.com"><span>support@ictman4jkt.com</span></a><br /> 00
+						(021) 769 02 83
+					</div>
+					<!-- /.widget -->
+				</div>
+				<!-- /column -->
+			</div>
+			<!--/.row -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+		</svg>
+	</div>
+	<script data-cfasync="false" src="{% static 'core/cdn-cgi/scripts/email-decode.min.js' %}"></script>
+	<script src="{% static 'core/assets/js/plugins.js' %}"></script>
+	<script src="{% static 'core/assets/js/theme.js' %}"></script>
+</body>
+
+</html>

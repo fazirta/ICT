@@ -1,0 +1,169 @@
+{% extends 'itech/base.html' %}
+{% load static %}
+
+{% block title %}
+I-Tech | Daftar Valorant
+{% endblock %}
+
+{% block body-bg %}
+{% static '/itech/assets/img/bg/body-bg2.webp' %}
+{% endblock %}
+
+{% block content %}
+<!-- breadcrumbs area start -->
+<div class="breadcrumbs_aree breadcrumbs_bg mb-140"
+  data-bgimg="{% static '/itech/assets/img/bg/breadcrumbs-bg.webp' %}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="breadcrumbs_text text-center">
+          <h1>Daftar</h1>
+          <ul class="d-flex justify-content-center">
+            <li><a href="index.html">Home </a></li>
+            <li><span>//</span></li>
+            <li>Daftar</li>
+            <li><span>//</span></li>
+            <li>Valorant</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- breadcrumbs area end -->
+<!-- page wrapper start -->
+<div class="page_wrapper">
+  <!-- contact section start -->
+  <section class="contact_page_section mb-140">
+    <div class="container">
+      <div class="row justify-content-between align-items-center mb-n50">
+        <div class="col-md-8 col-12 mx-auto mb-50">
+          <form method="POST" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="section_title text-center mb-60">
+              <h2>Daftar Valorant</h2>
+              </br>
+              <h4>
+                Silahkan isi semua kolom dibawah dengan data yang benar
+              </h4>
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Tim }}
+            </div>
+            <div class="form_input">
+              {{ form.Nomor_Whatsapp_dan_Line }}
+            </div>
+            <div class="form_input">
+              {{ form.Nomor_Whatsapp_dan_Line_opsional }}
+            </div>
+            <div class="form_input">
+              {{ form.Player_1 }}
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Lengkap_atau_Nama_Asli_1 }}
+            </div>
+            <div class="form_input">
+              {{ form.Player_2 }}
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Lengkap_atau_Nama_Asli_2 }}
+            </div>
+            <div class="form_input">
+              {{ form.Player_3 }}
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Lengkap_atau_Nama_Asli_3 }}
+            </div>
+            <div class="form_input">
+              {{ form.Player_4 }}
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Lengkap_atau_Nama_Asli_4 }}
+            </div>
+            <div class="form_input">
+              {{ form.Player_5 }}
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Lengkap_atau_Nama_Asli_5 }}
+            </div>
+            <div class="form_input">
+              {{ form.Player_6 }}
+            </div>
+            <div class="form_input">
+              {{ form.Nama_Lengkap_atau_Nama_Asli_6 }}
+            </div>
+            <div class="form_input" style="margin-top: 4rem;">
+              <h3>Peraturan Lomba</h3>
+              <p>
+                1. Biaya pendaftaran Rp. 50.000,00 per tim.</br>
+                2. Wajib mengikuti technical meeting sebagai persyaratan daftar ulang dan konfirmasi.</br>
+                3. Nama username Riot ID setelah didaftarkan tidak boleh diganti apabila ada pergantian peserta tidak
+                dapat memasuki ruangan lomba.</br>
+                4. Peserta yang berada di satu tim boleh berasal dari berbagai SMA/MA/Sederajat atau Perguruan
+                Tinggi.</br>
+                5. Peserta tidak boleh berkata dan melontarkan kalimat yang bersifat menyinggung SARA di chat maupun di
+                discord, jika terbukti melakukan tindakan SARA akan didendakan sebesar Rp30.000,00.</br>
+                6. Peserta dilarang menggunakan cheat, macro, maupun alat curang yang lainnya.</br>
+                7. Panitia tidak bertanggung jawab atas masalah jaringan internet.</br>
+              </p>
+            </div>
+            <div class="form_input" style="margin-bottom: 4rem;">
+              <h3>Saya memahami dan ingin berpartisipasi</h3>
+              <div style="display: flex;">
+                <input required type="checkbox" name="Paham_dan_ingin_berpartisipasi"
+                  placeholder="Saya memahami dan ingin berpartisipasi" id="id_Paham_dan_ingin_berpartisipasi" style="
+                display: inline;
+                width: auto;
+                height: auto;
+                padding: auto;
+                line-height: auto;
+                color: auto;
+                background: auto;
+                border: auto;
+                border-radius: auto;
+                margin-right: 1rem;">
+                <p>Ya</p>
+              </div>
+            </div>
+            <div>
+              <h4 style="margin: 2rem 0">
+                Lomba Valorant dikenakan biaya sebesar 💳: Rp50.000/team
+                Silahkan melakukan pembayaran melalui rekening berikut: Mandiri 1270006135071 A/N fero
+                </br>
+                </br>
+                NOTE: silahkan gabung ke link group WhatsApp yang disediakan SETELAH submit Form ini
+              </h4>
+            </div>
+            <div class="form_input">
+              <h3>Upload Bukti Transaksi</h3>
+              {{ form.Bukti_Transaksi }}
+            </div>
+            <div>
+              <h4 style="margin: 2rem 0">
+                Silahkan upload foto kartu pelajar atau screenshoot NISN siswa aktif
+              </h4>
+            </div>
+            <div class="form_input">
+              <h3>Upload Bukti Pelajar</h3>
+              {{ form.Bukti_Pelajar }}
+            </div>
+
+            <div class="form_input_btn text-center mb-40">
+              <h4>
+                Pastikan anda telah mengisi semua kolom diatas dengan data yang benar
+              </h4>
+              </br>
+              <button type="submit" class="btn btn-link" style="z-index: 0;">
+                Daftar
+                <img width="20" height="20" src="{% static '/itech/assets/img/icon/arrrow-icon.webp' %}" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section end -->
+</div>
+<!-- page wrapper end -->
+{% endblock %}
